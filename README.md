@@ -37,7 +37,6 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 -Metricbeat records statistical data and metrics from the OS and from other services that are also running on the server.
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name     | Function | IP Address | Operating System        |
 |----------|----------|------------|-------------------------|
@@ -58,12 +57,12 @@ Machines within the network can only be accessed by SSH.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible  | Allowed IP Addresses |
-|----------|----------------------|----------------------|
-| Jump Box |   No                 | 10.0.0.1 10.0.0.2    |
-|  Web-1   |Yes, via Load Balancer|                      |
-|  Web-2   |Yes, via Load Balancer|                      |
-|ELK-Server|   No                 |                      |
+| Name     | Publicly Accessible  |   Allowed IP Addresses   |
+|----------|----------------------|--------------------------|
+| Jump Box |   No                 | Personal IP Address      |
+|  Web-1   |Yes, via Load Balancer| 104.45.221.188 (JumpBox) |
+|  Web-2   |Yes, via Load Balancer| 104.45.221.188 (JumpBox) |
+|ELK-Server|   No                 | Personal IP via port 5601|
 
 ### Elk Configuration
 
@@ -102,7 +101,7 @@ SSH into the control node and follow the steps below:
 - To make Ansible run the playbook on a spefic machine it is necessary to update the /etc/ansible/hosts file and add the private IP address of the machine that you want ansilbe to run the playbook on. 
 - In order to check that the ELK server is running correctly it is necessary to navigate to http://(ELK-server-public-IP):5601/app/kibana
 
--- To run the Ansible Configuration of the ELK server and test it the following commands should be run:
+- To run the Ansible Configuration of the ELK server and test it the following commands should be run:
 
 1. ssh azadmin@(public IP of Jumpbox)
 2. sudo docker container list -a (This will display the available ansible container)
