@@ -10,9 +10,9 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook (.yml) file may be used to install only certain pieces of it, such as Filebeat.
 
   - [my-playbook.yml](https://github.com/Rickyquintanar/Rickys-ASU-Cybersecurity-Bootcamp-Project1/blob/main/Ansible/my-playbook.yml) was used to install the web servers
-  - [elk-playbook.yml]() was used to install the ELK server
-    - [filebeat-playbook.yml]() was used to install and configure Filebeat on the ELK and Web servers
-    - [metricbeat-playbook.yml]() was used to install and configure Metricbeat on the ELK and Web servers
+  - [elk-playbook.yml](https://github.com/Rickyquintanar/Rickys-ASU-Cybersecurity-Bootcamp-Project1/blob/main/Ansible/elk-playbook.yml) was used to install the ELK server
+    - [filebeat-playbook.yml](https://github.com/Rickyquintanar/Rickys-ASU-Cybersecurity-Bootcamp-Project1/blob/main/Ansible/filebeat-playbook.yml) was used to install and configure Filebeat on the ELK and Web servers
+    - [metricbeat-playbook.yml](https://github.com/Rickyquintanar/Rickys-ASU-Cybersecurity-Bootcamp-Project1/blob/main/Ansible/metricbeat-playbook.yml) was used to install and configure Metricbeat on the ELK and Web servers
 
 This document contains the following details:
 - Description of the Topology
@@ -98,7 +98,7 @@ SSH into the control node and follow the steps below:
 - Update the configuration file to include the private IP address of the ELK server to the ElasticSearch and Kibana sections of the file.
 - Run the playbook, and navigate to (ELK-server-publicIP):5601/app/kibana to check that the installation worked as expected.
 
-- The elk-playbook.yml is used to install the ELK server. The filebeat.yml server is used to install and configure Filebeat on the ELK server and web servers. The metricbeat-playbook.yml is used to install and configure Metricbeat on the ELK and web servers. The files are copied to the /etc/ansible folder.
+- The [elk-playbook.yml](https://github.com/Rickyquintanar/Rickys-ASU-Cybersecurity-Bootcamp-Project1/blob/main/Ansible/elk-playbook.yml) is used to install the ELK server. The [filebeat.yml](https://github.com/Rickyquintanar/Rickys-ASU-Cybersecurity-Bootcamp-Project1/blob/main/Ansible/filebeat-playbook.yml) server is used to install and configure Filebeat on the ELK server and web servers. The [metricbeat-playbook.yml](https://github.com/Rickyquintanar/Rickys-ASU-Cybersecurity-Bootcamp-Project1/blob/main/Ansible/metricbeat-playbook.yml) is used to install and configure Metricbeat on the ELK and web servers. The files are copied to the /etc/ansible folder.
 - To make Ansible run the playbook on a spefic machine it is necessary to update the /etc/ansible/hosts file and add the private IP address of the machine that you want ansilbe to run the playbook on. 
 - In order to check that the ELK server is running correctly it is necessary to navigate to http://(ELK-server-public-IP):5601/app/kibana
 
