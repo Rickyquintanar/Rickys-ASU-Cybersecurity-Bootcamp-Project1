@@ -33,8 +33,8 @@ By ensuring availability of the web servers, load balancing is protecting the av
 A Jump Box was created to make the administtation tasks of the network easier. The main advantage of using a Jump Box is having a single origination point for administrative tasks. The Jump Box ultimately makes the network more secure as well as it only allows access to those who have been granted access. In order to perform administrative tasks it is necessary to access the Jump Box before the other servers can be accessed.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
--Filebeat scans for log files and locations and collects log events.
--Metricbeat records statistical data and metrics from the OS and from other services that are also running on the server.
+  -Filebeat scans for log files and locations and collects log events.
+  -Metricbeat records statistical data and metrics from the OS and from other services that are also running on the server.
 
 The configuration details of each machine may be found below.
 
