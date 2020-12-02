@@ -9,10 +9,10 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook (.yml) file may be used to install only certain pieces of it, such as Filebeat.
 
-  - my-playbook.yml was used to install the web servers
-  - elk-playbook.yml was used to install the ELK server
-    -filebeat-playbook.yml was used to install and configure Filebeat on the ELK and Web servers
-    -metricbeat-playbook.yml was used to install and configure Metricbeat on the ELK and Web servers
+  - [my-playbook.yml]() was used to install the web servers
+  - [elk-playbook.yml]() was used to install the ELK server
+    - [filebeat-playbook.yml]() was used to install and configure Filebeat on the ELK and Web servers
+    - [metricbeat-playbook.yml]() was used to install and configure Metricbeat on the ELK and Web servers
 
 This document contains the following details:
 - Description of the Topology
