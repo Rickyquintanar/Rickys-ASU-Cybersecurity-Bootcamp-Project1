@@ -3,6 +3,28 @@ My ASU Cybersecurity Bootcamp ELK Stack Project
 
 ## Automated ELK Stack Deployment
 
+Task: Build a log management platform using the open-source Elasticsearch, LogStash, Kibana ("ELK") Stack tools.
+
+Criteria:
+
+  - Set up a virtual private cloud network.
+  - Protect the cloud network with a firewall.
+  - Deploy a virtual computer(s) to the cloud network that will be a JumpBox and Provisioner.
+  - Access the entire VNet from the jump box.
+  - Install and run containers using Docker.
+  - Set up Ansible connections to VMs inside the VNet.
+  - Write Ansible playbooks to configure VMs.
+  - Create a load balancer on the Azure platform.
+  - Create a firewall and load balancer rules to allow traffic to the correct virtual machines.
+  - Verify redundancy by turning off one or more virtual machines used in the infrastructure.
+  - Deploying containers using Ansible and Docker.
+  - Deploying Filebeat using Ansible.
+  - Deploying the ELK stack on a server.
+  - Diagramming networks and creating a README.
+
+Summary of the ELK Stack: The ELK Stack is comprised of ElasticSearch, LogStash, and Kibana. ElasticSearch is used for collecting and centrally storing logs, LogStash is used for indexing, processing, and storing logs, and Kibana is a web interface used for visualizing the logged data in real-time. Centralizing log data allows for easy searches, early detection, and isolation of IT issues, as well as troubleshooting applications and servers. In more advanced instances, ELK stack can be used for web analytics and data that provides actionable information for a business. In addition, Beats will be added to the ELK stack. Beats allow us to collect the various information. In particular, Filebeat monitors logs files of a machine and ships that log data, in order to centralize the information. This log data can include logons, or other file system information. While, Metricbeat is set up to ship machine metrics like CPU usage, memory, and file system information, to a centralized location.
+
+
 The files in this repository were used to configure the network depicted below.
 
 ![](/images/Red-Team-Network.PNG)
