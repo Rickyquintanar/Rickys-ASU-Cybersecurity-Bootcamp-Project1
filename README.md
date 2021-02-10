@@ -1,5 +1,5 @@
 # Rickys-ASU-Cybersecurity-Bootcamp-Project1
-My ASU Cybersecurity Bootcamp ELK Stack Project
+Arizona State University Cybersecurity Bootcamp ELK Stack Project
 
 ## Automated ELK Stack Deployment
 
